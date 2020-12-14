@@ -7,10 +7,12 @@ import Register from './Register';
 const Auth = () => {
   return (
     <Switch>
-      <Redirect exact path="/auth" redirect="/auth/login" />
+      <Redirect exact path="/auth" to="/auth/login" />
+
       <Route path="/auth/login">
         <Login />
       </Route>
+
       <Route path="/auth/register">
         <Register />
       </Route>

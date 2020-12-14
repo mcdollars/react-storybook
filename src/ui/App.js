@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Redirect exact path="/" redirect="/auth" />
+        <Redirect exact path="/" to="/auth" />
         <Router />
       </Switch>
     </BrowserRouter>
